@@ -22,7 +22,7 @@ fun Application.module() {
         issuer = environment.config.property("jwt.issuer").getString(),
         audience = environment.config.property("jwt.audience").getString(),
         exiresIn = 365L * 1000L * 60L * 24L,
-        secret = System.getenv("JWT_SECRET")
+        secret = "JWT_SECRET"
     )
     val hashingService = SHA256HashingService()
     configureSerialization()
