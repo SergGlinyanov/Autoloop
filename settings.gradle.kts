@@ -1,0 +1,1 @@
+rootProject.name = "com.glinyanov.auto-calendar"
